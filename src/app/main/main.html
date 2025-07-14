@@ -1,0 +1,11 @@
+<div class="container">
+   @if(selectedPage === 'home') {
+      <app-home></app-home>
+   } @else if(selectedPage === 'about') {
+      <app-about></app-about>
+   } @else if(selectedPage === 'webstore') {
+      <app-webstore></app-webstore>
+   } @else {
+      <p>Page not found</p>
+   }
+</div>

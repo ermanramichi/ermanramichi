@@ -1,0 +1,9 @@
+<div class="nav">
+    <ul>
+        @for (category of categories; track category.cid) {
+            <li>
+                <button (click)="selectCategory(category.cid)">{{category.cname}}</button>
+            </li>
+        }
+    </ul>
+</div>

@@ -1,0 +1,24 @@
+{
+  "Categories": [
+    {
+      "cname": "Coffee",
+      "cid": "c1",
+      "cavatar": "coffee.png"
+    },
+    {
+      "cname": "Drinks",
+      "cid": "c2",
+      "cavatar": "drinks.png"
+    },
+    {
+      "cname": "Dessert",
+      "cid": "c3",
+      "cavatar": "dessert.png"
+    },
+    {
+      "cname": "Fruits",
+      "cid": "c4",
+      "cavatar": "fruits.png"
+    }
+  ]
+}

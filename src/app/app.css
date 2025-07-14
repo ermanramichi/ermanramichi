@@ -1,0 +1,12 @@
+app-header{
+    height: 100%;
+    width: 15%;
+   
+}
+app-main{
+    height: 100%;
+    width: 81%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

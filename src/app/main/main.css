@@ -1,0 +1,20 @@
+.container{
+    width: 100%;
+    height: 95%;
+    background-color: #2C423F;
+    border-radius: 20px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+app-webstore{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-items: center;
+
+
+    align-items: center;
+    flex-direction: column;
+}

@@ -1,0 +1,10 @@
+<div class="wrapper">
+  <app-category (selectedCategory)="onCategorySelected($event)"></app-category>
+  <div class="maincontainer">
+    <div class="productlisting">
+        <h1 style="color:white;">Products</h1>
+      <app-product [selectedCategory]="selectedCategory"></app-product>
+    </div>
+    <div class="shoppingCart">ShoppingCart-to-be-implemented</div>
+  </div>
+</div>

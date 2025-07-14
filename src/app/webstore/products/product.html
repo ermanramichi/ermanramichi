@@ -1,0 +1,13 @@
+<div class="products" >
+    @for(product of getFilteredProducts(); track product.pid) {
+        <div class="product">
+            <h2>{{product.pname}}</h2>
+            <div class="imagewrapper">
+                <img [src]="getImageUrl(product.pavatar)" alt="{{product.pavatar}}" class="product-image" />
+            </div>
+            <p>{{product.pprice}} MKD</p>
+            <button>Add to Cart</button>
+            
+        </div>
+    }
+</div>
