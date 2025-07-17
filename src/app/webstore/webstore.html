@@ -3,8 +3,8 @@
   <div class="maincontainer">
     <div class="productlisting">
         <h1 style="color:white;">Products</h1>
-      <app-product [selectedCategory]="selectedCategory"></app-product>
+      <app-product [selectedCategory]="selectedCategory" (productSelected)="onProductSelected($event)"></app-product>
     </div>
-    <div class="shoppingCart">ShoppingCart-to-be-implemented</div>
+    <div class="shoppingCart"><app-shopping-cart [product]="productSelected"></app-shopping-cart></div>
   </div>
 </div>

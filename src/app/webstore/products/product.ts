@@ -1,6 +1,6 @@
-import { Component, Input } from "@angular/core";
+import { Component, Input, Output, EventEmitter} from "@angular/core";
 import products  from '../../../products.json';
-type ProductData = {
+ export type ProductData = {
   pid:string;
   pname:string;
   pprice:number;
@@ -17,6 +17,7 @@ export class Product {
     products: ProductData[] = []; 
     @Input() selectedCategory: string = '';
 
+    
     ngOnInit(): void {
         this.products = products.Products;
     }
@@ -25,5 +26,9 @@ export class Product {
     }
     getFilteredProducts(): ProductData[] {
         return this.products.filter(product => product.cid === this.selectedCategory);
+    }
+    @Output() productSelected = new EventEmitter<ProductData>();
+    selectProduct(product: ProductData) {
+        this.productSelected.emit(product);
     }
 }

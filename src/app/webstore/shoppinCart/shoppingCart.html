@@ -1,0 +1,17 @@
+<div class="wrapper">
+    <h1>shoppingCart</h1>
+    @if(cartItems.length > 0) {
+        <ul>
+            @for(item of cartItems; track item.pid) {
+                <li>
+                    <h2>{{item.pname}}</h2>
+                    <p>Price: {{item.pprice}} MKD</p>
+                    
+                </li>
+            }
+        </ul>
+    } @else {
+        <p>Your shopping cart is empty.</p>
+    }
+    
+</div>
